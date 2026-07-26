@@ -35,6 +35,21 @@
              C) Will return the default implemetation in parent class , because derived class didn't override it  
              */
             #endregion
+            #region Question04
+            /*
+             A) A partial class is a class whose definition is split across multiple files 
+                and During compilation the  compiler merges all parts into one complete class.
+                A developer splits Calculator to organize the code, share with team .
+             B) A partial method is a method whose declaration is in one part of a partial class and the implementation can be in another part
+                Yes,the code will still compile because the compiler ignores it and does not throw an error
+             C)-Extension method is a method that allows you to add new functionality to an existing class 
+                without modifying its source code.
+               -Solid Concept open for extension, closed for modification
+               -Three rules : must be inside static class ,static method,using (this parameter)
+             d) Log: result = 20
+                 $20.00
+             */
+            #endregion
             #endregion
         }
     }
