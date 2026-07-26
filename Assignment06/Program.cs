@@ -26,6 +26,15 @@
              Choose an interface when you want to define a common contract (member signatures) that different classes must implement.
              */
             #endregion
+            #region Question03
+            /*
+             A) No,Because the appliance is abstract class can't creat an object with because the class is not fully implemented
+             B)-PowerConsumtion: is abstract(Not implemented body) because each derived classes must implement it and override with own power
+               -Status: is a implemented method with body and a derived class can override it with own status but if didn't override with own body ,still with default body in parent class
+               -Label: is concrete because all classes with the same implementation ,so any derived classes not should to ovveride and repeat the code with same behaviour
+             C) Will return the default implemetation in parent class , because derived class didn't override it  
+             */
+            #endregion
             #endregion
         }
     }
