@@ -16,6 +16,16 @@
             Encapsulation: Balance should be private can't access directly,should use properties/methods to access it to protect the data 
              */
             #endregion
+            #region Question02
+            /*
+             Abstract class : Has properties, fields, constructors, and methods and the methods can be full implemented or abstract
+                               and a class can inherit from only one abstract class.
+             interface :  Can contain only the signatures of methods, properties, events, and indexers
+                          Can't have fields or constructors and a class can implement multiple interfaces.
+             Choose an abstract class when you want to share common properties and methods with/without implementation among derived classes.
+             Choose an interface when you want to define a common contract (member signatures) that different classes must implement.
+             */
+            #endregion
             #endregion
         }
     }
