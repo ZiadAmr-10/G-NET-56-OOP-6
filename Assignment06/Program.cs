@@ -51,6 +51,29 @@
              */
             #endregion
             #endregion
+            #region Part02
+            Cinema cinema=new Cinema("Cinema");
+            cinema.OpenCinema();
+            //Ticket t=new Ticket();->Error can't create object from abstract class
+            Ticket Ticket1 = new StandardTicket("Avengers", 200, "A5");
+            Ticket1.Book();
+            cinema.Add(Ticket1);
+            Ticket Ticket2 = new VipTicket("Spiderman", 300, true, 50);
+            Ticket2.Book();
+            cinema.Add(Ticket2);
+            Ticket Ticket3 = new IMaxTicket("inception", 400, true);
+            Ticket3.Book();
+            cinema.Add(Ticket3);
+            cinema.PrintAll();
+            Console.WriteLine(" --- Polymorphism: Final Price per Ticket ---");
+            Console.WriteLine($"{Ticket1.GetType().Name}=> Final Price:{Ticket1.CalculateFinalPrice()}");
+            Console.WriteLine($"{Ticket2.GetType().Name}=> Final Price:{Ticket2.CalculateFinalPrice()}");
+            Console.WriteLine($"{Ticket3.GetType().Name}=> Final Price:{Ticket3.CalculateFinalPrice()}");
+            Console.WriteLine("------------- Extension Method: Receipt ------------\n");
+            Ticket1.Receipt();
+            Console.WriteLine("------------- Extension Method: Total Revenue ------------");
+            Console.WriteLine(cinema.Tickets.TotalRevenue());
+            #endregion
         }
     }
 }
